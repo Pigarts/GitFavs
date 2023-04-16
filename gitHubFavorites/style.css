@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --hue: 193;
+    --baseColor: hsl(var(--hue), 72%, 13%);
+    --secundaryColor: hsla(var(--hue), 72%, 13%, .4);
+    --color3: hsla(var(--hue), 72%, 13%, .2);
+}
+
+H1, a, span, table {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+span {
+    filter: brightness(0.8);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 24px;;
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: black;
+}
+
+#app {
+    max-width: 72rem;
+    padding: 2rem;
+    margin: 30px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searsh {
+    align-items: center;
+    display: flex;
+}
+
+input {
+    width: 162px;
+    height: 34px;
+    background-color: var(--secundaryColor);
+    border: none;
+    border-radius: 8px 0 0 8px;
+    padding-left: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#searsh-button {
+    padding: 12px 32px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    height: 34px;
+    border: none;
+    background-color: var(--baseColor);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+table {
+    margin-top: 1.5rem;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    padding: .6rem 2rem;
+    background-color: var(--baseColor);
+}
+
+table th:first-child {
+    border-top-left-radius: 1rem;
+}
+
+table th:last-child {
+    border-top-right-radius: 1rem;
+}
+
+
+table td {
+    padding: 14px;
+}
+
+td.user img {
+    height: 5.6rem;
+    border-radius: 50%;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+td button{
+    background: none;
+    border: none;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--secundaryColor);
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--color3);
+}
